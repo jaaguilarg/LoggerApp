@@ -99,6 +99,11 @@
       <Name>UnitTestLogApp</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="DB\01. Create DB.sql" />
+    <Content Include="DB\02. Create table.sql" />
+    <Content Include="DB\03. Create SP.sql" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>if exist "$(TargetPath).locked" del "$(TargetPath).locked"
